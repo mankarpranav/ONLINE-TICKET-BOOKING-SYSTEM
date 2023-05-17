@@ -1,0 +1,81 @@
+1. Introduction
+   1. Obejctive: 
+	The purpose of the online ticket booking system is to provide a convenient and efficient 
+	platform for users to book tickets for various services or way of transportation.
+	
+   2. Scope: 
+	The system will allow users to browse available select seats, make payments, 
+	and receive e-tickets. 
+	It will also provide an administrative interface for managing venues, and user bookings.
+   
+   3. Definitions & Acronyms : None
+
+
+2. System Design
+   1. System Architecture: 
+	The system will be a web-based application built using a three-tier architecture 
+	(presentation layer, application layer, and data layer).
+	
+   2. System Interfaces: 
+	The system will have interfaces for users, administrators, and 
+	external payment gateways.
+   3. Types of Users: 
+	The system will cater to two types of users: 
+	a.regular users who book tickets 
+	b.administrators who manage the system.
+   4. Constraints: 
+	The system should be responsive, secure, and
+	scalable to handle a large number of concurrent users.
+
+
+3. Functional Requirements
+	
+   1. User Registration and Login
+      - Users should be able to register an account with the system by providing their details.
+      - Users should be able to log in to their accounts using their credentials.
+
+   2. Event Management
+      - Administrators should be able to add, update, and delete schedules.
+      - Events should have attributes such as title, description, date, time, venue, and available seats.
+
+   3. Ticket Booking
+      - Users should be able to browse available events and view event details.
+      - Users should be able to select seats and specify the quantity of tickets.
+      - Users should be able to add tickets to their shopping cart.
+      - Users should be able to proceed to checkout and make payments.
+
+   4. Payment Processing
+      - The system should integrate with external payment gateways to process payments securely.
+      - Payment options should include credit/debit card, net banking, and mobile wallets.
+
+   5. Ticket Generation
+      - Once payment is successful, the system should generate e-tickets details 
+	and a unique booking reference.
+      - E-tickets should be emailed to the user and stored in their account for future reference.
+
+   6. Booking Management
+      - Administrators should be able to view and manage user bookings.
+      - Administrators should be able to cancel or refund tickets if required.
+
+4. Non-Functional Requirements
+
+   1. Usability: 
+	The system should have an interactive user interface that is easy to navigate and understand.
+
+   2. Performance: 
+	The system should be responsive and handle concurrent user requests efficiently.
+
+   3. Security: 
+	The system should implement secure authentication, protect user data, and use 
+	encryption for sensitive information.
+	
+   4. Reliability: 
+	The system should be available 24/7 with minimal downtime for maintenance.
+	
+   5. Scalability: 
+	The system should be scalable to handle a growing number of users and events.
+	System can be scalable as customer base jumps.
+	
+   6. Compatibility: 
+	The system should be compatible with major web browsers and devices.
+

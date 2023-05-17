@@ -1,0 +1,26 @@
+
+Entities To be Form : 
+
+1. Event
+   - Attributes: eventID, title, desc, date, time, venueID, availableSeats
+   - Relationships: One-to-many with Booking table
+
+
+2. Venue
+   - Attributes: venueID, name, address
+   - Relationships: One-to-many with Event table
+
+
+3. User
+   - Attributes: userID, name, email, password
+   - Relationships: One-to-many with Booking table
+
+
+4. Booking
+   - Attributes: bookingID, userID, eventID, numTickets, bookingDate
+   - Relationships: Many-to-one with User and Event table
+
+
+5. Payment
+   - Attributes: paymentID, bookingID, amount, paymentDate
+   - Relationships: One-to-one with Booking table
